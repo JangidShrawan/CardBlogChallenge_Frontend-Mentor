@@ -36,7 +36,7 @@ public class AddStudent extends JFrame implements ActionListener {
 
         // frame name apply
 
-        JLabel l_name = new JLabel("New Student Details");
+        JLabel l_name = new JLabel("New Student Details Who have just taken addmission ");
         l_name.setFont(new Font("Raleway", Font.BOLD, 38));
         l_name.setBounds(250, 40, 400, 50);
         add(l_name);
