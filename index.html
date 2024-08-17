@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="A Card-Blog Frontend Mentor Challenge , Learning Frontend With Practice">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card By Shrawan Jangid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* 
+    ------------  General Styles  -----------
+    */
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height: 100vh;
+      background: hsl(47, 88%, 63%);
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      padding: 70px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1{
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+    a{
+      text-decoration: none;
+    }
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+    /* 
+    ------------  Specific Styles  -----------
+    */
+    main{
+      max-width: 325px;
+      margin: 3vw;
+    }
+    .card{
+      width: 100%;
+      border-radius: 20px;
+      padding: 5%;
+      background: hsl(0, 0%, 100%);
+      display: flex;
+      flex-direction: column;
+      border:1px solid #000;
+      box-shadow: 7px 7px;
+      gap:5px;
+    }
+    
+    .card img{
+      border-radius: 20px;
+    }
+
+    .card a{
+      width:80px;
+      color: #000;
+      margin: 5px 0;
+      font-weight: 700;
+      padding: 3px 9px;
+      background: hsl(47, 88%, 63%);
+      border-radius: 4px;
+    }
+
+    .profile, h1{
+      color:hsl(0, 0%, 7%);
+      font-weight: 950;
+    }
+
+    p{
+      color: hsl(0, 0%, 42%);
+      margin: 8px 0px;
+    }
+
+    .p-col{
+      color: #000;
+      font-weight: 500;
+      margin: 3px 0px;
+    }
+    
+    .profile{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0px 6px 0px;
+    }
+
+    .profile img{
+      height: 40px;
+      width: 40px;
+    }
+
+    @media screen and (max-width:768px){
+      main{
+        width:90%;
+        margin: 25px auto;
+      }
+      h1{
+        font-size: 22px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width:480px){
+      .card{
+        width: 90%;
+        margin: 20px auto;
+      }
+      h1{
+        font-size: 18px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+    @media screen and (max-width:300px){
+      .card{
+        width: 80%;
+        margin: 25px auto;
+      }
+      h1{
+        font-size: 16px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+
+    footer{
+      margin: 15px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card" id="card">
+      <img src="assets/images/illustration-article.svg" alt="card-image">
+      <a href="#card">Learning</a>
+
+      <p class="p-col">Published 21 Dec 2023</p>
+
+      <h1>HTML & CSS foundations</h1>
+
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+      <div class="profile"> <img src="assets/images/image-avatar.webp" alt="card-profile pic"> <span>Greg Hooper</span></div>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Shrawan Jangid</a>.
+    </div>
+  </footer>
+</body>
+</html>
